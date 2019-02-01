@@ -1,10 +1,11 @@
 server:
     port: 8083
-    servlet:
-      context-path: /ui2
-    session:
-      cookie:
-        name: UI2SESSION
+#    servlet:
+#      context-path: /uix
+#    session:
+#      cookie:
+        #name: UI2SESSION
+#        name: SESSION
 security:
   basic:
     enabled: false
@@ -19,4 +20,5 @@ security:
 spring:
   thymeleaf:
     cache: false
-logging.level.org.springframework.security: DEBUG
+logging.level.org.springframework.security: INFO
+logging.level.org.springframework.security.oauth2: INFO
